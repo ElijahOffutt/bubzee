@@ -13,11 +13,14 @@
     "@kevinmarrec/nuxt-pwa": "^0.17.0",
     "@nuxt/devtools": "^0.8.5",
     "@nuxtjs/google-fonts": "^3.0.2",
+    "@types/three": "^0.158.2",
     "nuxt": "3.7.4",
     "sass": "^1.68.0",
     "vuetify": "^3.3.19"
   },
   "dependencies": {
+    "@tresjs/core": "^3.5.0",
+    "three": "^0.158.0",
     "vite-plugin-vuetify": "^1.0.2"
   }
 }

@@ -1,8 +1,12 @@
 <template>
-    <div>
-        scene
-    </div>
+    <TresCanvas window-size>
+        <TresPerspectiveCamera />
+        <TresMesh>
+          <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
+          <TresMeshBasicMaterial color="orange" />
+        </TresMesh>
+      </TresCanvas>
 </template>
 
-<style lang=""scss>
+<style lang="scss">
 </style>

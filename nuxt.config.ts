@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   typescript: { shim: false },
   build: { transpile: ["vuetify"] },
   modules: [
+    "@tresjs/nuxt",
     "@kevinmarrec/nuxt-pwa",
     async (options, nuxt) => {
       nuxt.hooks.hook("vite:extendConfig", (config) => {

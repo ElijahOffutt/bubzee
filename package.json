@@ -19,8 +19,10 @@
     "vuetify": "^3.3.19"
   },
   "dependencies": {
+    "@tresjs/cientos": "^3.6.0",
     "@tresjs/core": "^3.5.0",
     "@tresjs/nuxt": "^1.2.2",
+    "animejs": "^3.2.1",
     "three": "^0.158.0",
     "vite-plugin-vuetify": "^1.0.2"
   }

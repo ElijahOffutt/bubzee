@@ -4,9 +4,11 @@
     <!-- META -->
     <TresPerspectiveCamera />
     <TresAxesHelper />
+    <!-- <OrbitControls /> -->
+    <TransformControls :object="cube" />
 
     <!-- OBJECTS -->
-    <TresMesh ref="cube" :rotation="[0, x, y]" :scale="1">
+    <TresMesh ref="cube" :scale="1">
       <TresBoxGeometry :args="[1, 1, 1]" />
       <TresMeshNormalMaterial />
     </TresMesh>
@@ -15,12 +17,17 @@
 </template>
 
 <script setup>
-const { onLoop } = useRenderLoop()
-let y = ref(0)
-let x = ref(0)
+import anime from 'animejs/lib/anime.es.js';
+import { OrbitControls, TransformControls, } from '@tresjs/cientos'
 
+const cube = shallowRef()
+
+// MAIN ANIMATION LOOP
+const { onLoop } = useRenderLoop()
 onLoop(() => {
-  y.value += .1
-  x.value += .1
 })
+
+
+
+
 </script>

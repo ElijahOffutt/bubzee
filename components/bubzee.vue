@@ -7,8 +7,12 @@
     <!-- <OrbitControls /> -->
     <TransformControls :object="cube" />
 
+<Stars />
+<Smoke />
+
+
     <!-- OBJECTS -->
-    <Levioso>
+    <Levioso speed="5" float-factor="2">
     <TresMesh ref="cube" :scale="1">
       <TresBoxGeometry :args="[1, 1, 1]" />
       <TresMeshNormalMaterial />
@@ -20,7 +24,7 @@
 
 <script setup>
 import anime from 'animejs/lib/anime.es.js';
-import { OrbitControls, TransformControls, Levioso } from '@tresjs/cientos'
+import { OrbitControls, TransformControls, Levioso, Sky, Stars, Smoke } from '@tresjs/cientos'
 
 const cube = shallowRef()
 

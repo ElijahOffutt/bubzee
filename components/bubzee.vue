@@ -3,20 +3,20 @@
 
     <!-- META -->
     <TresPerspectiveCamera />
-    <TresAxesHelper />
+    <!-- <TresAxesHelper /> -->
     <!-- <OrbitControls /> -->
-    <TransformControls :object="cube" />
+    <!-- <TransformControls :object="cube" /> -->
 
-<Stars />
-<Smoke />
+    <Stars />
+    <Smoke />
 
 
     <!-- OBJECTS -->
-    <Levioso speed="5" float-factor="2">
-    <TresMesh ref="cube" :scale="1">
-      <TresBoxGeometry :args="[1, 1, 1]" />
-      <TresMeshNormalMaterial />
-    </TresMesh>
+    <Levioso speed="5" float-factor="1">
+      <TresMesh ref="cube" :scale="1">
+        <TresBoxGeometry :args="[1, 1, 1]" />
+        <TresMeshNormalMaterial />
+      </TresMesh>
     </Levioso>
 
   </TresCanvas>
